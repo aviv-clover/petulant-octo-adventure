@@ -1,0 +1,27 @@
+{{partial "_topnav"}}
+
+<div class="container">
+  <section class="page-nav">
+    <div class="row row-bottom-zero">
+      <div class="col-xs-11">
+        {{#link-to "operations.onboard-fdc" class="page-nav-link" activeClass="page-nav-link-active"}}
+          {{t "internal.onboarding.onboard_fdc_merchant"}}
+        {{/link-to}}
+        {{#link-to "operations.onboard-ipg" class="page-nav-link" activeClass="page-nav-link-active"}}
+          {{t "internal.onboarding.onboard_ipg_merchant"}}
+        {{/link-to}}
+        {{#link-to "outbound-boarding.index" class="page-nav-link" activeClass="page-nav-link-active"}}
+          {{t "internal.onboarding.outbound_boarding"}}
+        {{/link-to}}
+        {{#link-to "operations.shipments" class="page-nav-link" activeClass="page-nav-link-active"}}
+          {{t "internal.shipments"}}
+        {{/link-to}}
+        {{#link-to "operations.activation" class="page-nav-link" activeClass="page-nav-link-active"}}
+          {{t "internal.activation"}}
+        {{/link-to}}
+      </div>
+    </div>
+  </section>
+
+  {{outlet}}
+</div>
